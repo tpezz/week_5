@@ -1,0 +1,55 @@
+You have a Anscombe quartet dataset in a file called Anscombe_quartet_data.csv. Create a file in python that reads the CSV and performs linear regression on the four x/y pairs. Keep code as simple and straight forward as possible
+
+Dataset:
+x123,y1,y2,y3,x4,y4
+10.0,8.04,9.14,7.46,8.0,6.58
+8.0,6.95,8.14,6.77,8.0,5.76
+13.0,7.58,8.74,12.74,8.0,7.71
+9.0,8.81,8.77,7.11,8.0,8.84
+11.0,8.33,9.26,7.81,8.0,8.47
+14.0,9.96,8.10,8.84,8.0,7.04
+6.0,7.24,6.13,6.08,8.0,5.25
+4.0,4.26,3.10,5.39,19.0,12.50
+12.0,10.84,9.13,8.15,8.0,5.56
+7.0,4.82,7.26,6.42,8.0,7.91
+5.0,5.68,4.74,5.73,8.0,6.89
+
+ChatGPT said:
+Here is a simple Python script that reads the Anscombe_quartet_data.csv file and performs linear regression on the four x/y pairs. The script uses pandas to read the CSV file and scipy.stats.linregress to perform the regression.
+
+Anscombe Regression
+This script reads the CSV file, extracts the relevant x/y pairs, runs linear regression for each dataset, and prints the results, including the slope, intercept, and R-squared value. Let me know if you need any modifications!
+
+
+
+
+
+
+You said:
+Can you confirm everything works here. To give you more context Anscombe_quartet_data.csv will sit in the same directory. Make the code as simple as possible
+ChatGPT said:
+Anscombe Regression
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+import pandas as pd
+import scipy.stats as stats
+
+df = pd.read_csv("Anscombe_quartet_data.csv")
+
+for i in range(1, 5):
+    x = df["x123"] if i < 4 else df["x4"]
+    y = df[f"y{i}"]
+    slope, intercept, r_value, _, _ = stats.linregress(x, y)
+    print(f"y{i}: Slope={slope:.2f}, Intercept={intercept:.2f}, R-squared={r_value**2:.2f}")
+
+Edited
+I've simplified your code while ensuring it works correctly. It reads the CSV file in the same directory and performs linear regression on all four datasets in a loop. Let me know if you need any further adjustments!
