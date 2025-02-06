@@ -1,4 +1,4 @@
-# Assignment 5 – AI-Assisted Code Generation for Go for Statistics
+# Assignment 5 – AI Code Generation (MSDS 431)
 
 This GitHub contains my work for Assignment 5 in MSDS 431. The goal of the assignment was to explore the use of free AI tools to assist in coding and to generate code automatically. I revisited my earlier “Go for Statistics” project (week 4) and evaluated the ability to read a CSV file and perform linear regression across three programming languages: Go, Python, and R.
 
