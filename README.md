@@ -6,13 +6,13 @@ This GitHub contains my work for Assignment 5 in MSDS 431. The goal of the assig
 
 ## Project Overview
 
-- **Objective:** Test both AI-assisted programming and AI-generated code in order to learn about how they can help developers. I also wanted to see how the code with these techniques compares to my origional code. 
+- **Objective:** Test both AI-assisted programming and AI-generated code in order to learn about how they can help developers. I also wanted to see how the code with these techniques compares to my origional code
 
-- **Task:** Read a CSV file (containing the Anscombe Quartet data) and perform linear regression on the four x/y pairs.
+- **Task:** Read a CSV file (containing the Anscombe Quartet data) and perform linear regression on the four x/y pairs
 
 ---
 
-## Plan and results
+## Plan + Results
 
 ### Step 1. Revisiting "Go for Statistics"
 I started with my original code from the "Go for Statistics" assignment. This code reads a CSV file and performs linear regression on the Anscombe Quartet dataset.
@@ -74,7 +74,9 @@ I also experimented with AI-generated code using ChatGPT 4o. My prompts included
 - **AI-Assisted Version:**  Best option. It refined the code without compromising my intended functionality
 - **Fully AI-Generated Version:**  Good for quick analysis but missed alot of key things I wanted
 
+
 **Overall Best Approach:**  
+
 **AI-Assisted Programming** provided the best balance between improving the original code and maintaining the features I wanted
 
 
